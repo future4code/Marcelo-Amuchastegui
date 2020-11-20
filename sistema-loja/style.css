@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  rgb(203, 225, 243);
+    font-family: sans-serif;
+    height: 200px;
+    width: 100%;
+}
+body2 {
+    background-color:  rgb(203, 225, 243);
+    font-family: sans-serif;
+    height: 820px;
+    width: 100%;
+}
+.header {
+    background-color: rgb(7, 83, 146);
+    color: #ffffff;
+    width: 100%;
+    height: 60px;   
+    align-items: center;
+    line-height: 60px;
+    padding-left: 20%;
+}
+a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 20px;    
+    text-decoration: none;
+}
+.slider {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.slider h1 {
+    padding-top: 45px;
+}
+.slider2 {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+.slider2 h1 {
+    padding-top: 35px;
+}
+.deptos {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 92%;
+    margin-left: 5%;
+    height: 200px;    
+}
+.deptos div {
+    width: 220px;   
+    margin-left: 4%;
+    float: left;
+}
+.deptos p {
+    text-align: center;
+}
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.redes {
+    width: 100%;
+    padding-left: 3%;
+}
+.footer img {
+    max-width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer div {
+    float: left;
+}
+.tabela {
+    width: 805px;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.t-foto {
+    width: 201px;
+    height: 30 px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    float: left;
+}
+.t-descricao {
+    width: 201px;
+    height: 30 px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    float: left;
+}
+.t-preco {
+    width: 201px;
+    height: 30 px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    float: left;
+}
+.t-disponivel {
+    width: 201px;
+    height: 30 px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    float: left;
+}
+.p-foto {
+    width: 201px;
+    height: 203px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    float: left;
+}
+.p-descricao {
+    width: 201px;
+    height: 203px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+.p-preco {
+    width: 201px;
+    height: 203px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+.p-disponivel {
+    width: 201px;
+    height: 203px;
+    border: solid;
+    background-color: #fff; 
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+.vazia {
+    width: 100%;
+    height: 60px;
+}
+.adicionar {
+    width: 40%;
+    margin-left: 30%;
+    height: 220px;
+    border: dotted;
+}
+form {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+button {
+    width: 70px;
+    height: 25px;
+    background-color: rgb(5, 80, 131);
+    color: #fff;
+}
+.colaboradores {
+    width: 95%;
+    height: 240px;
+    margin-left: 30px;
+}
+.nome {
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 30px;
+    float: left;
+    background-color: #fff;
+}
+.retrato {
+    height: 180px;
+    width: 180px;
+    margin-left: 30px;
+    float: left;
+    background-color: #c3c3c3;
+}
