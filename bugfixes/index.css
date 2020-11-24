@@ -53,7 +53,10 @@ div>p:first-child {
 .icone {
     width: 20px;
 }
-
+.container ol {
+    list-style-type: decimal;
+    display: inline-block;
+}
 
 /** 
   *
@@ -91,9 +94,10 @@ div>p:first-child {
   *
   **/
 
-div:nth-child(2),
-div:last-child {
-    text-align: center;
+  div:nth-child(2),
+  div:last-child {
+      text-align: center;
+    
 }
 
 table {
