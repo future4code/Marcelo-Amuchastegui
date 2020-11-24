@@ -1,0 +1,45 @@
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  #water {
+  grid-column-start:3
+  }
+  #poison {
+    grid-column-start:5
+    }
+  #water {
+    grid-column-start: 1;
+  grid-column-end: 4
+  }
+  #water {
+    grid-column-start: 5;
+  grid-column-end: 2
+  }
+  #water {
+    grid-column-start: 1;
+  grid-column-end:5
+  }
+  #poison {
+    grid-column: 4;
+    }
+    #water {
+        grid-column-start: 2;
+      grid-column-end:4;
+    }
+    #water {
+        grid-column-start: 1;
+      grid-column-end:6;
+    }
+    #water {
+    grid-column-start:3;
+      grid-column-end: 6;
+    }
+    #water {
+        grid-column:6/4;
+    }
+    #water {
+        grid-column:2/5
+    }
+    
