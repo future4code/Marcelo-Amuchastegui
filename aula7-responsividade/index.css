@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#number {
+    border: solid;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#first-block {
+    background-color: red;
+    display: flex;
+    width: 100vw;
+    height: 10vw;
+    margin-bottom: 0.5vw;
+}
+
+.blue-block {
+    background-color: blue;
+    width: 33vw;
+    height: 15vh;
+    margin: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .yellow-block {
+    background-color: yellow;
+    width: 32vw;
+    height: 15vh;
+    margin: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .green-block {
+    background-color: green;
+    width: 32vw;
+    height: 15vh;
+    margin: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .black-block {
+    background-color: black;
+    color: white;
+    width: 49vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    margin: 0.5vw;
+    align-items: center;
+  }
+  
+  .white-block9 {
+    background-color: white;
+    width: 32.2vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    margin: 0.5vw;
+    align-items: center;
+    margin-bottom: 1vw;
+  }
+  .white-block10 {
+    background-color: white;
+    width: 32.2vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    margin: 0.5vw;
+    align-items: center;
+    margin-bottom: 1vw;
+  }
+  .white-block11 {
+    background-color: white;
+    width: 32.2vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    margin: 0.5vw;
+    align-items: center;
+    margin-bottom: 1vw;
+  }
+  
+/* Ipad */
+@media screen and (max-width : 800px) {
+  .blue-block,
+  .yellow-block,
+  #item-9,
+  #item-10 {
+    width: 49vw;
+  }
+  .green-block,
+  #item-11 {
+    width: 98vw;
+  }
+.white-block9,
+.white-block10 {
+    width: 49vw;
+} 
+.white-block11 {
+    width: 98vw;
+}
+
+@media screen and (min-width: 320px) and (max-width : 450px) {
+    .blue-block,
+    .yellow-block,
+    .green-block,
+    .white-block9,
+    .white-block10,
+    .black-block,
+    .white-block11 {
+        width: 98vw;
+        height: 20vw;
+    }
+}
+}
