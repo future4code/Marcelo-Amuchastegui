@@ -1,0 +1,77 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
+}
+#top-container {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+}
+.green-background {
+    background-color: green;
+    display: flex;
+    width: 20vw;
+}
+
+.yellow-background {
+    background-color: yellow;
+    width: 80vw;
+}
+
+#middle-container {
+    display: flex;
+   
+}
+.pink-background {
+    background-color: fuchsia;
+    width: 100vr;
+    height: 58vh;
+    
+}
+
+#middle-container {
+    display: flex;
+    width: 100vr;
+    height: 24vh;
+}
+
+#content2 {
+    width: 50%;
+}
+.blue-background {
+    background-color: blue;
+    display: flex;
+    
+    height: 24vh;
+}
+
+#blank {
+    height: 24vh;
+    display: flex;
+    flex: 1;
+}
+
+#vertical-middle-container {
+    display: flex;
+    width: 25vr;
+    flex-direction: column;
+    flex: 1;
+}
+.red-background {
+    background-color: red;
+    height: 12vh;
+   
+}
+.lightgreen-background {
+    background-color: lightgreen;
+    height: 12vh;
+}
+
+.purple-background {
+    background-color: purple;
+    height: 7vh;
+}
