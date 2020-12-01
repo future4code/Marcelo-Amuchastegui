@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas a realizar</title>
+</head>
+<body>
+3. Faça um programa, seguindo os passos:
+a. Crie um array vazio e guarde-o em uma variável, chamada `listaDeTarefas`
+b. Pergunte ao usuário 3 tarefas que ele precise realizar no dia e armazene-as, uma por uma, no array
+c. Imprima o array na tela
+d. Peça ao usuário que digite o **índice** de uma tarefa que ele já realizou: 0, 1 ou 2 
+e. Remova da lista o item de índice que o usuário escolheu.
+f. Imprima o array na tela
+    <script>
+        let listaDeTarefas = [];
+        let tar1 = prompt("Digite 1a tarefa a realizar")
+        let tar2 = prompt("Digite 2a tarefa a realizar")
+        let tar3 = prompt("Digite 3a tarefa a realizar")
+        listaDeTarefas.push(tar1)
+        listaDeTarefas.push(tar2)
+        listaDeTarefas.push(tar3)
+        console.log(listaDeTarefas);
+
+        let indice = prompt("Digite o indice de uma tarefa que ele já realizou: 0, 1 ou 2 ");
+        let ind = Number(indice)
+        listaDeTarefas.splice(ind, 1)
+        console.log(listaDeTarefas);
+    </script>
+    
+</body>
+</html>

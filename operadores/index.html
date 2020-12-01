@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*   1. Faça um programa que: a. Pergunte a idade do usuário b. Pergunte a idade do seu melhor amigo ou da sua melhor amiga
+           c. **Imprima na tela** a seguinte mensagem: "Sua idade é maior do que a do seu melhor amigo?", seguido pela resposta (`true` ou `false`)
+           d. **Imprima na tela** a diferença de idade (não tem problema se sair um número negativo)*/
+    let eu = prompt("qual é sua idade?");
+    let amigo = prompt("qual é a idade de seu melho amigo?")
+    console.log("Minha idade é maior que a dele?: ", Number(eu) > Number(amigo));
+    console.log("Nossa diferença de idade é de: ",Number(eu) - Number(amigo));
+
+    /*2. Faça um programa que: a. Peça ao usuário que insira um número **par**.
+    b. Imprima na tela **o resto da divisão** desse número por 2.
+    c. Teste o programa com diversos números pares. Você notou um padrão? Escreva em um comentário de código.
+    d. O que acontece se o usuário inserir um número ímpar? Escreva em um comentário de código */
+    let num = prompt("Digite um número PAR")
+    let resto = Number(num % 2)
+    console.log("O resto da divisão de "+Number(num)+" por 2 é igual a: ", resto);
+
+  </script>
+
+
+
+
+
+  </body>
+</html>
