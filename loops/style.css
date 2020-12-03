@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+#container {
+    background-color: antiquewhite;
+    margin: 2vw 10vw 5vw 10vw;
+    height: 600px;
+}
