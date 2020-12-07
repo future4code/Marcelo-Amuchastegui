@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <div id="ex01">
+        <b>EXERCICIO 01</b><br>
+        function minhaFuncao(variavel) {<br>
+            return variavel * 5<br>
+        }<br>
+        console.log(minhaFuncao(2))<br>
+        console.log(minhaFuncao(10))<br>
+        a. O que vai ser impresso no console?<br>
+        <p><b>10 e 50</b></p>
+        b. O que aconteceria se retirasse os dois `console.log` e simplesmente invocasse a função<br>
+        `minhaFuncao(2)` e `minhaFuncao(10)`? O que apareceria no console?
+        <p><b>Nada apareceria no console</b></p>
+    </div>
+    <div>
+        <b>EXERCICIO 02</b><br>
+        let arrayDeNomes = ["Darvas", "Caio", "João", "Paulinha", "Soter"];<br>
+        const outraFuncao = function(array) {<br>
+            for (let i = 0; i < 2; i++) {<br>
+                console.log(array[i])<br>
+            }<br>
+        }<br>
+        outraFuncao(arrayDeNomes)<br>
+        a. Explicite quais são as saídas impressas no console<br>
+           <h4>Imprimirá "Darvas" e "Caio</h4>
+        b. Se `arrayDeNomes` mudasse de valor para `["Amanda", "Caio"]`, o que vai ser impresso no console?<br>
+            <h4>Imprimirá "Amanda" e "Caio"</h4>
+    </div>
+    <div>
+        <b>EXERCICIO 03</b><br>
+        const metodo = (array) => {<br>
+            let arrayFinal = []<br>
+            for (let x of array) {<br>
+                  if (x % 2 === 0) {<br>
+                  arrayFinal.push(x * x)
+                  }
+            }<br>
+            return arrayFinal;
+          }<br>
+          <p><b>O "array final" é um array dos quadrados dos números pares do "array"</b></p>
+    </div>
+    
+</body>
+</html>
