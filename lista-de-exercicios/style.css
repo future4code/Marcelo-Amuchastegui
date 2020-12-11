@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 50vh;
+    margin-left: 10mw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.container {
+    display: grid;
+    width: 80vw;
+    height: 50 vh;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: rgb(253, 247, 239);
+}
+#exercicios {
+    border: solid;
+    border-width: 0.5px;
+}
+p {
+    padding: 0.5vw;
+}
