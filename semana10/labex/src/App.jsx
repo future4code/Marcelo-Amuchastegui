@@ -1,28 +1,13 @@
-import Home from './pages/Home';
-import { ChakraProvider, extendTheme, Flex } from '@chakra-ui/react';
+import {Switch, Route, BrouserRouter} from 'react-router-dom'
+import Routes from './pages/Routes'
 
-const labexTheme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        textAlign: "center",
-        boxSizing: "border-box",
-        margin: 0,
-        padding: 0,
-        color: "#FF0000"
-      }
-    }
-  }
-})
 
-const App = () => {
+
+export default function App() {
   return (
-    <ChakraProvider theme={labexTheme}>
-      <Flex>
-        <Home></Home>       
-    </Flex>
-    </ChakraProvider>
-  );
+    <div className="App"> 
+      <Routes/>     
+    </div>
+  )
 }
 
-export default App;
