@@ -4,7 +4,7 @@ import Moon from './Moon';
 import Interplanetary from './Interplanetary';
 import Cadastro from './Cadastro'
 import Login from './Login';
-import Reservas from './Reservas'
+import Ofertas from './Ofertas'
 import SingleGravZero from './SingleGravZero'
 
 const Routes = () => {
@@ -16,7 +16,7 @@ const Routes = () => {
                 <Route exact component={Interplanetary} exact path="/Interplanetary"/>
                 <Route exact component={Login} exact path="/Login"/>
                 <Route exact component={Moon} exact path="/Moon"/>
-                <Route exact component={Reservas} exact path="/Reservas"/> 
+                <Route exact component={Ofertas} exact path="/Ofertas"/> 
                 <Route exact component={SingleGravZero} exact path="/SingleGravZero"/>                             
             </Switch>
         </Router>

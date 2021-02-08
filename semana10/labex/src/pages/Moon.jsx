@@ -16,6 +16,7 @@ export default function Moon() {
      width: 100vw;
      color: white;
      background-image: url(${Under});
+     background-repeat: no-repeat;
      `; 
     const Call = styled.div`  
     display: flex;

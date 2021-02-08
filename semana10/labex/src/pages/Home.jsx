@@ -4,15 +4,12 @@ import Footer from '../../src/components/Footer'
 import styled from 'styled-components'
 import AntiGrav from '../../src/image/antiGrav.jpg'
 import Marte from '../../src/image/marte.jpg'
-import Mir from '../../src/image/mir.jpg'
+import Estacao from '../../src/image/estacao.jpg'
 import Rocket from '../../src/image/rocket.jpg'
 import Planetas from '../../src/image/planetas.jpg'
 import { useHistory } from 'react-router-dom'
 
-
-export default function Home() {
-
-    const Container = styled.div`
+const Container = styled.div`
      display: flex;
      flex-direction:row;
      justify-content: center;
@@ -21,6 +18,7 @@ export default function Home() {
      max-width: 100vw;
      color: white;
      background-image: url(${AntiGrav});
+     background-repeat: no-repeat;
      `;
 
     const Call = styled.div`  
@@ -85,13 +83,15 @@ export default function Home() {
       height: 60vh;
       display: flex; 
       background-image: url(${Marte});
+      background-repeat: no-repeat;
       text-align: center;
       `;
       const BigA = styled.div`
       width: 55vw;
       height: 60vh;
       display: flex; 
-      background-image: url(${Mir});
+      background-image: url(${Estacao});
+      background-repeat: no-repeat;
       text-align: center;
       `;
       const BigB = styled.div`
@@ -99,6 +99,7 @@ export default function Home() {
       height: 60vh;
       display: flex; 
       background-image: url(${Planetas});
+      background-repeat: no-repeat;
       text-align: center;
       `;
       const BigC = styled.div`
@@ -106,6 +107,7 @@ export default function Home() {
       height: 60vh;
       display: flex; 
       background-image: url(${Rocket});
+      background-repeat: no-repeat;
       text-align: center;
       `;
       const Explain = styled.div`
@@ -121,6 +123,8 @@ export default function Home() {
        font-weight: 600;
        font-size: 15px;
       `;
+
+export default function Home() {
  
     const history = useHistory()
     return (
@@ -129,30 +133,30 @@ export default function Home() {
             <Header/>
             <Container>
                 <Call>Gravidade Zero, uma experiência inesquecível!
-                    <Boton onClick = {() => history.push('/SingleGravZero')}>Faça já sua reserva</Boton>
+                    <Boton onClick = {() => history.push('/Cadastro')}>Faça já sua reserva</Boton>
                 </Call>           
             </Container>
-            <Spacer>Labe-x agência especializada em viagens espaciais e interplanetárias.</Spacer>
+            <Spacer>LABE-x agência especializada em viagens espaciais e interplanetárias.</Spacer>
             <Inter>
                 <Big> </Big>
-                <Small><Explain> <h2>Viagem à marte</h2> São 482 dias de muito aprendizado, paisagens indescritíveis, em meio à calmaria do espaço sideral, sensação de paz e relaxamento, quando poderá por sua leitura em dia. <Botone>Faça já sua reserva</Botone></Explain>
+                <Small><Explain> <h2>Viagem à marte</h2> São 482 dias de muito aprendizado, paisagens indescritíveis, em meio à calmaria do espaço sideral, sensação de paz e relaxamento, quando poderá por sua leitura em dia. <Botone onClick = {() => history.push('/Interplanetary')}>Mais informações</Botone></Explain>
                 </Small>
             </Inter>
             <Espaco/>
             <Inter>
-                <Small><Explain><h2>Caminhada no espaço</h2>Este ano é comemorado o aniversário de 50 anos da primeira caminhada no espaço e Labe-x está oferecendo pacote sensacional com 30% de desconto. Não percam !<Botone>Faça já sua reserva</Botone></Explain>
+                <Small><Explain><h2>Caminhada no espaço</h2>Este ano é comemorado o aniversário de 50 anos da primeira caminhada no espaço e Labe-x está oferecendo pacote sensacional com 30% de desconto. Não percam !<Botone onClick = {() => history.push('/Interplanetary')}>Mais informações</Botone></Explain>
             </Small>
                 <BigA></BigA>                
             </Inter>
             <Espaco/>
             <Inter>
                 <BigB></BigB>
-                <Small><Explain><h2>Qual é seu planeta preferido.</h2> Nosso limite é o infinito. Com a aquisição de novas e  modernas naves, reduzimos os tempo das viagens. Antes íamos à Netuno em 4 anos.  Agora são somente 2,5 anos !<Botone>Faça já sua reserva</Botone></Explain>
+                <Small><Explain><h2>Qual é seu planeta preferido.</h2> Nosso limite é o infinito. Com a aquisição de novas e  modernas naves, reduzimos o tempo das viagens. Antes íamos à Netuno em 4 anos.  Agora em somente 2,5 anos !<Botone onClick = {() => history.push('/Interplanetary')}>Mais informações</Botone></Explain>
                 </Small>
             </Inter>
             <Espaco/>
             <Inter>
-                <Small><Explain><h2>Não deixe o "bondi" passar.</h2> Faça parte das primeiras expedições que habitarão outros planetas. Em nossas naves não embarcam políticos corruptos nem parentes deles. Venha viver no paraíso. <Botone>Faça já sua reserva</Botone></Explain>   
+                <Small><Explain><h2>Não deixe o "bondi" passar.</h2> Faça parte das primeiras expedições que habitarão outros planetas. Em nossas naves não embarcam políticos corruptos nem parentes deles. Venha viver no paraíso. <Botone onClick = {() => history.push('/Interplanetary')}>Mais informações</Botone></Explain>   
                 </Small>
                 <BigC></BigC>                
             </Inter>

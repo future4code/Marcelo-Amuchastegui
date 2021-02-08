@@ -19,6 +19,7 @@ const Container = styled.div`
     const Logo = styled.div`
     margin-left: 10vw;
     background-image: url(${Foto});
+    background-repeat: no-repeat;
     width: 70px;
     height: 70px;
     `
@@ -64,7 +65,7 @@ export default function Header() {
             <Text>LABE-x</Text>
             <Nav>
                 <Boto onClick = {() => history.push('/')} >HOME</Boto>
-                <Boto onClick = {() => history.push('/SingleGravZero')}>RESERVAS</Boto>
+                <Boto onClick = {() => history.push('/Ofertas')}>OFERTAS</Boto>
                 <Boto onClick = {() => history.push('/Cadastro')}>CADASTRO</Boto>
                 <Boto onClick = {() => history.push('/Login')}>LOGIN</Boto>
             </Nav>                                   

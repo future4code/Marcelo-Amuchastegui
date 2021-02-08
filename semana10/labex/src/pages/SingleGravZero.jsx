@@ -5,10 +5,7 @@ import Footer from '../../src/components/Footer'
 import ZeroGrav from '../../src/image/zeroGrav.jpg'
 import { useHistory } from 'react-router-dom'
 
-
-export default function SingleGravZero() {
-
-    const Inter = styled.div` 
+const Inter = styled.div` 
     width: 98vw;
     height: 66vh;
     display: flex;
@@ -21,6 +18,7 @@ export default function SingleGravZero() {
      display: flex; 
      background-color:#272F3F;
      background-image: url(${ZeroGrav});
+     background-repeat: no-repeat;
      `;
 
       const Big = styled.div`
@@ -46,15 +44,17 @@ export default function SingleGravZero() {
       font-weight: 600;
       font-size: 15px;
      `;
-     
-     const history = useHistory()
+
+export default function SingleGravZero() {
+    
+    const history = useHistory()
     return (        
         <div>
             <Header/>
             <Inter>
                 <Small></Small>
                 <Big>
-                    <Text><h2>Parabéns por escolher "Gravidade Zero"</h2> Viajar é fonte de inspiração para muitas pessoas e uma das provas disso são as milhares de frases de viagem criadas por pessoas do mundo todo e em todos os tempos. Se liga então nessa lista linda de frases de viagem criadas por Filósofos, Escritores, Poetas, Cantores, Líderes Religiosos e desconhecidos.  </Text><Botone >Ir para cadastro</Botone>
+                    <Text><h2>Parabéns por escolher "Gravidade Zero"</h2> Esta é a proposta da <b>LABE-x</b> quem criou uma experiência de voo sem qualquer gravidade. Ao longo da viagem, que tem duração de uma hora e meia, você experimentará 15 vezes a <b>gravidade zero</b>, com duração de 20 a 30 segundos cada. Para fazer sua reserva clique no botão embaixo e será direcionada à área de cadastro. </Text><Botone onClick = {() => history.push('/Cadastro')}>Ir para cadastro</Botone>
                 </Big>
             </Inter>
             <Footer/>

@@ -1,9 +1,10 @@
 import React from 'react'   
 import styled from 'styled-components'
-import Header from '../../src/components/Header'
 import Footer from '../../src/components/Footer'
-import Mir from '../../src/image/mir.jpg'
+import Header from '../../src/components/Header'
+import AviaoZero from '../../src/image/aviaoZero.jpg'
 import { useHistory } from 'react-router-dom'
+
 
 const Inter = styled.div` 
     width: 98vw;
@@ -17,7 +18,7 @@ const Inter = styled.div`
      height: 66vh;
      display: flex; 
      background-color:#272F3F;
-     background-image: url(${Mir});
+     background-image: url(${AviaoZero});
      background-repeat: no-repeat;
      `;
 
@@ -54,7 +55,7 @@ export default function SingleGravZero() {
             <Inter>
                 <Small></Small>
                 <Big>
-                    <Text><h2>Reservas esgotadas até 2025 </h2>Mas não fique triste, ainda temos vagas disponíveis na experiência <b>Gravidade Zero</b>. .... vamos fazer sua reserva agora com<b> desconto especial para todas as mulheres?</b>.  Clique no botão embaixo e siga o roteiro indicado em cada uma das páginas.  </Text><Botone onClick = {() => history.push('/Ofertas')}>Ir para ofertas</Botone>
+                    <Text><h2> Oferta imperdível !</h2>Em homenagem a todas as mulheres e em comemoração ao dia Internacional delas, <b>LABE-x</b> esta oferecendo<b> 50% de desconto na experiência Gravidade Zero </b>a todas as mulheres que façam suas reservas até 08 de março de 2021. Clique no botão e faça já seu cadastro e inscrição. </Text><Botone onClick = {() => history.push('/Cadastro')}>Ir para cadastro</Botone>
                 </Big>       
             </Inter>
             <Footer/>
